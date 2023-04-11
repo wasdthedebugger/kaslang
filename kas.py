@@ -69,7 +69,19 @@ def interpret(code):
 
 def interpret_file():
     if len(sys.argv) < 2:
-        print("Usage: python interpreter.py <filename>")
+        print("""
+  _  __           _____ _               _   _  _____ 
+ | |/ /    /\    / ____| |        /\   | \ | |/ ____|
+ | ' /    /  \  | (___ | |       /  \  |  \| | |  __ 
+ |  <    / /\ \  \___ \| |      / /\ \ | . ` | | |_ |
+ | . \  / ____ \ ____) | |____ / ____ \| |\  | |__| |
+ |_|\_\/_/    \_\_____/|______/_/    \_\_| \_|\_____|
+                                                     
+                                                     
+ Kaslang Version 1.0
+ Developer: Nikas Ghimire
+ Github: https://github.com/wasdthedebugger
+""")
         return
 
     filename = sys.argv[1]
